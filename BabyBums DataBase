@@ -1,0 +1,39 @@
+/** BabyBums Inventory:
+Diapers
+Wipes
+Bottles
+Baby Soap
+Walker
+Lotion
+Formula
+Cradle Cap Cream
+Gas Drops
+Tummy Time Mat
+Infant Tylenol
+Crib Sheets
+Crib
+Blankets
+Baby Powder
+**/
+
+CREATE table BabyBums (id INTEGER, item TEXT, price INTEGER, type TEXT, aisle INTEGER, sale TEXT);
+
+INSERT INTO BabyBums VALUES (1, "Diapers", 22, "Hygeine", 2, "N");
+INSERT INTO BabyBums VALUES (2, "Wipes", 13, "Hygeine", 2, "N");
+INSERT INTO BabyBums VALUES (3, "Bottles", 8, "Feeding", 4, "Y");
+INSERT INTO BabyBums VALUES (4, "Baby Soap", 4, "Hygeine", 2, "Y");
+INSERT INTO BabyBums VALUES (5, "Walker", 25, "Activity", 5, "N");
+INSERT INTO BabyBums VALUES (6, "Lotion", 3, "Hygeine", 2, "Y");
+INSERT INTO BabyBums VALUES (7, "Formula", 30, "Feeding", 4, "N");
+INSERT INTO BabyBums VALUES (8, "Cradle Cap Cream", 7, "Health", 1, "N");
+INSERT INTO BabyBums VALUES (9, "Gas Drops", 5, "Health", 1, "N");
+INSERT INTO BabyBums VALUES (10, "Tummy Time Mat", 22, "Activity", 5, "Y");
+INSERT INTO BabyBums VALUES (11, "Infant Tylenol", 12, "Health", 1, "N");
+INSERT INTO BabyBums VALUES (12, "Crib Sheets", 7, "Bedding", 3, "Y");
+INSERT INTO BabyBums VALUES (13, "Crib", 120, "Bedding", 3, "N");
+INSERT INTO BabyBums VALUES (14, "Blankets", 9, "Bedding", 3, "Y");
+INSERT INTO BabyBums VALUES (15, "Baby Powder", 3, "Hygeine", 2, "N");
+SELECT * FROM BabyBums ORDER BY price; 
+SELECT * FROM BabyBums WHERE price <50;
+SELECT SUM(price) FROM BabyBums;
+SELECT AVG(price) FROM BabyBums;
